@@ -3,9 +3,22 @@
 
 在某git server，比如 https://github.com/chyyuu/ucore_lab 可下载我们提供的lab1~lab8实验软件中，大致经过如下过程就可以完成使用。
 
-1. 在学堂在线查看OS相关原理和labX的课程视频
-1. 如果第一次做lab，需要建立lab试验环境，可采用基于virtualbox虚拟机的最简单方式完成
-1. 阅读本次lab的[实验指导书](http://objectkuan.gitbooks.io/ucore-docs/)，了解本次lab的试验要求
+下载代码
+
+```Shell
+git clone https://github.com/chyyuu/os_kernel_lab.git
+cd os_kernel_lab
+git checkout master
+```
+切记一定要在master分支下进行实验！！不要再问为什么没有代码了，因为你们的分支不对，不是master。
+master分支的文件夹结构如下。需要编写的部分在labcodes里面，答案在labcodes_answer中。
+```Shell
+> ls
+bootloader  labcodes  labcodes_answer  LICENSE  opensource_os_list.md  os  README-chinese.md  README.md  related_info  resources.md  rust-toolchain
+
+```
+
+
 1. 下载源码(可以直接在github下载，或通过git pull下载)
 2. 进入各个OS实验工程目录 例如： cd labcodes/lab1
 3. 根据实验要求阅读源码并修改代码（用各种代码分析工具和文本编辑器）
