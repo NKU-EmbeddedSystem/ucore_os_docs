@@ -1,7 +1,5 @@
 #!/bin/bash
-
 gitbook build .
-mkdir -p ~/tmp
 cp -rf _book/* ~/tmp/ucore_docs
 cd ~/tmp/ucore_docs
 git add .
